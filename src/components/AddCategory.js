@@ -10,7 +10,6 @@ export const AddCategory = ({ setCategories }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Submit Hecho')
         setCategories(cats => [...cats, inputValue])
         setInputValue('')
         // setCategories(inputValue)

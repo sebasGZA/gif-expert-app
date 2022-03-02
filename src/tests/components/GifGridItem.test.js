@@ -25,7 +25,7 @@ describe('Pruebas para <GifGridItem/>', () => {
     })
 
     test('Debe de tener animate__backInRight', () => {
-        const classname  = wrapper.hasClass('animate__backInRight')
+        const classname = wrapper.hasClass('animate__backInRight')
         expect(classname).toBeTruthy()
         // expect(p.text().trim()).toBe(title)
     })

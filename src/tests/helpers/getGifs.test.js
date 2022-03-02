@@ -1,4 +1,3 @@
-import React from 'react';
 import { getGifs } from '../../helpers/getGifs'
 
 

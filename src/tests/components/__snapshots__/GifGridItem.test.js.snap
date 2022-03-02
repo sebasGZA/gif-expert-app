@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas para <GifGridItem/> Debe de mostrar <GifGridItem/> correctamente 1`] = `
+<div
+  className="card animate__animated animate__backInRight"
+>
+  <img
+    alt="Dragon Ball"
+    src="https://media1.giphy.com/media/19JSJ5ucu91R5D7a3w/giphy.gif?cid=e81b06cevwgyupb28o4v4fs2te5t9r059ccn5dw2gxljzdwj&rid=giphy.gif&ct=g"
+  />
+  <p>
+    Dragon Ball
+  </p>
+</div>
+`;

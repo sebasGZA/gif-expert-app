@@ -6,6 +6,8 @@ export const GifExpertApp = () => {
 
   const onAddCategory = (newCategory) => {
     //   setCategories((cat) => [...cat, "Dragon Ball"]);
+    if (categories.includes(newCategory)) return;
+    
     setCategories([newCategory, ...categories]);
   };
 
@@ -18,8 +20,8 @@ export const GifExpertApp = () => {
 
       <ol>
         {categories.length !== 0 &&
-          categories.map((category, i) => {
-            return <li key={i}>{category}</li>;
+          categories.map((category) => {
+            return <li key={category}>{category}</li>;
           })}
       </ol>
     </>

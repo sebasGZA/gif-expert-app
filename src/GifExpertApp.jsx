@@ -4,24 +4,23 @@ import { AddCategory } from "./components/AddCategory";
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState([""]);
 
-  const onAddCategory = () => {
+  const onAddCategory = (newCategory) => {
     //   setCategories((cat) => [...cat, "Dragon Ball"]);
-    setCategories(["Dragon Ball", ...categories]);
+    setCategories([newCategory, ...categories]);
   };
 
   return (
     <>
-      <h1>GiftExpertApp</h1>
+      <h1>GifExpertApp</h1>
 
       {/* Input*/}
-      <AddCategory setCategories={setCategories} />
-
-      <button onClick={onAddCategory}>Add</button>
+      <AddCategory onNewCategory={(value) => onAddCategory(value)} />
 
       <ol>
-        {categories.map((category, i) => {
-          return <li key={i}>{category}</li>;
-        })}
+        {categories.length !== 0 &&
+          categories.map((category, i) => {
+            return <li key={i}>{category}</li>;
+          })}
       </ol>
     </>
   );

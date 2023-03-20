@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
 
-export const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(["One Punch"]);
+export const GifExpertApp = () => {
+  const [categories, setCategories] = useState([""]);
 
   const onAddCategory = () => {
     //   setCategories((cat) => [...cat, "Dragon Ball"]);
@@ -14,7 +14,7 @@ export const GiftExpertApp = () => {
       <h1>GiftExpertApp</h1>
 
       {/* Input*/}
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
 
       <button onClick={onAddCategory}>Add</button>
 

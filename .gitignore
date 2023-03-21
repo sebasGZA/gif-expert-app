@@ -25,3 +25,4 @@ dist-ssr
 
 # Jest 
 src/tests/components/__snapshots__
+src/tests/__snapshots__

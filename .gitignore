@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Jest 
-src/tests/components/__snapshot__
+src/tests/components/__snapshots__

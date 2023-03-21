@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <AddCategory /> Should make match with snapshot 1`] = `
+<div>
+  <form>
+    <input
+      placeholder="Search gifs"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
